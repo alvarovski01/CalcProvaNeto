@@ -36,10 +36,10 @@ int main()
     cin >> a22;
     cout << "\n";
 
-    /*CÁLCULO DOS DETERMINANTES*/
-    detA = a11 * a22 + a12 * a21;
+    /*CÃLCULO DOS DETERMINANTES*/
+    detA = a11 * a22 - a12 * a21;
 
-    /*CÁLCULO DO COFATOR*/
+    /*CÃLCULO DO COFATOR*/
     A11 = a22;
     A12 = -(a21);
     A21 = -(a12);
@@ -62,7 +62,7 @@ int main()
 
     cout << "\n";
 
-    cout << "Qual cálculo deseja realizar?" << endl;
+    cout << "Qual cÃ¡lculo deseja realizar?" << endl;
     cout << "\n1. Determinante \n 2. Matriz dos cofatores \n 3. Matriz inversa \n 4. Determinante da matriz inversa \n" << endl;
     cout << "-> Escolha: ";
     cin >> decisao;
@@ -75,20 +75,20 @@ int main()
         printf("Seu determinante resultou em %.2f\n", detA);
         break;
     case '2':
-        printf("Aqui está a matriz do cofator:\n");
+        printf("Aqui estÃ¡ a matriz do cofator:\n");
         printf("\n");
         printf("|%.2f %.2f|\n", A11, A12);
         printf("|%.2f %.2f|\n", A21, A22);
         break;
     case '3':
-        printf("Aqui está a matriz inversa:\n");
+        printf("Aqui estÃ¡ a matriz inversa:\n");
         printf("|%.2f %.2f|\n", I11, I21);
         printf("|%.2f %.2f|\n", I12, I22);
         break;
     case '4':
-        printf("O determinante da inversa é %.2f", dinv);
+        printf("O determinante da inversa Ã© %.2f", dinv);
     default:
-            printf("Você não selecionou nenhuma opção válida.\n");
+            printf("VocÃª nÃ£o selecionou nenhuma opÃ§Ã£o vÃ¡lida.\n");
         break;
     }
 
